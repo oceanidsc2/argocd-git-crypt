@@ -1,0 +1,11 @@
+include:
+  - project: oceanids/c2/infrastructure/ci-scripts
+    ref: master
+    file: python-microservice/all.yml
+
+variables:
+  IMAGE_REGISTRY: oceanidsc2
+  DOCKER_IMAGE_NAME: argocd-git-crypt
+  CI_SKIP_LINT: "1"
+  CI_SKIP_TESTS: "1"
+  CI_SKIP_DOCS: "1"
