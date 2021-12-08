@@ -3308,6 +3308,8 @@ spec:
         projected:
           defaultMode: 420
           sources:
+          - secret:
+              name: argocd-gpg-keys-secret
           - configMap:
               name: argocd-gpg-keys-cm
       - configMap:
