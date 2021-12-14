@@ -7,7 +7,7 @@ RUN apt update \
  && apt clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# RUN mv /usr/bin/git /usr/bin/git.bindoc
-# COPY git /usr/bin/git
+RUN mv /usr/bin/git /usr/bin/git.bin
+COPY ../git /usr/bin/git
 
 USER 999
