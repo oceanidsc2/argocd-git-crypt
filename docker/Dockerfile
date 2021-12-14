@@ -7,6 +7,8 @@ RUN apt update \
  && apt clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN file="$(ls -1)" && echo $file
+
 RUN mv /usr/bin/git /usr/bin/git.bin
 COPY ./git /usr/bin/git
 
