@@ -8,6 +8,6 @@ RUN apt update \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mv /usr/bin/git /usr/bin/git.bin
-COPY git /usr/bin/git
+COPY ./git /usr/bin/git
 
 USER 999
